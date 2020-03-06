@@ -20,32 +20,43 @@
 
   <!-- Custom styles for this template -->
   <link href="css/grayscale.min.css" rel="stylesheet">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+
+
   <style type="text/css">
-    #video_intro{
+
+
+
+    .header #video_intro{
+
         right: 0;
         bottom: 0;
-        min-width: 100%; 
-        min-height: 100%;
+        max-width: 100%;
+        height: auto;
     }
     #pic1{
-      width: 20%;
-      height: 20%;
+      width: 10%;
+      height: 10%;
     }
-    #backgroundAbout{
+    backgroundAbout{
       background-image: url(https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/background/bg03.jpg);
       max-width: 100%;
       height: auto;
       background-position: center;
       background-size:cover;
     }
-    #about{
+    about{
     	background-image: url(https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/background/bg04.jpg);
     	max-width: 100%;
 	      height: auto;
 	      background-position: center;
 	      background-size:cover;
     }
-    #projects{
+    projects{
     	background-image: url(https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/background/bg06.jpg);
     	max-width: 100%;
 	      height: auto;
@@ -59,6 +70,56 @@
 	      background-position: center;
 	      background-size:cover;
     }
+
+    .parallax-window {
+        min-height: 3000px;
+        background: transparent;
+    }
+
+
+    .floor {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      width: inherit;
+      min-height: inherit;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      }
+
+     .ceiling {
+       position: absolute;
+       top: 0;
+       right: 0;
+       left: 0;
+       margin-top: -3px;
+       width: inherit;
+       min-height: inherit;
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: bottom center;
+      }
+
+      .ceiling.text {
+        background-image: url(https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/ceiling/ceiling03.png);
+        bottom: -740px;
+      }
+
+      .floor.text {
+        background-image: url(https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/floor/floor03.png);
+        bottom: -1450px;
+      }
+
+      .header .floor.header {
+        background-image: url(https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/floor/floor10.png);
+        bottom: -200px;
+        background-size: cover;
+      }
+
+
+
   </style>
 
 </head>
@@ -79,7 +140,7 @@
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Blind Forest</a>
+            <a class="nav-link js-scroll-trigger" href="#projects">Forest</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#signup">Subcribe</a>
@@ -89,12 +150,20 @@
     </div>
   </nav>
 
-  <!-- Header -->
+  <!-- Header-->
+  <section class="header">
   <video autoplay muted loop id = "video_intro">
     <source src="img\trailer.mp4" type="video/mp4">
   </video>
-  
-  <header id="backgroundAbout">
+  <div class="floor header"></div>
+</section>
+
+  <div style="color: #777;background-color:black;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
+  </div>
+
+
+  <!--<header id="backgroundAbout">
     <img src="img\ceiling03.png" style="max-width: 100% ; height: auto; margin-top: -10px">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
@@ -102,29 +171,29 @@
       </div>
     </div>
     <img src="img\floor03.png" style="max-width: 100% ; height: auto; margin-bottom: -160px">
-  </header>
+  </header> -->
 
-  <!-- About Section -->
-  <section id="about" class="about-section text-center">
+  <section class="parallax-window " data-parallax="scroll"  data-image-src="https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/background/bg03.jpg">
+    <img src="img\ceiling03.png" style="max-width: 100% ; height: auto;">
+
+    <img src="img\floor03.png" style="max-width: 100% ;position: relative;; top: 2230px;">
+  </section>
+
+
+
+  <!-- About Section-->
+  <section id="about" class="parallax-window " data-parallax="scroll"  data-image-src="https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/background/bg04.jpg">
   	<img src="img\ceiling02.png" style="max-width: 100% ; height: auto;">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
-          <p class="text-white-50">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-            <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-        </div>
-      </div>
-    </div>
-    <img src="img\floor02.png" style="max-width: 100% ; height: auto;">
+
+    <img src="img\floor02.png" style="max-width: 100% ; position: relative; top: 1850px; ">
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="projects-section bg-light">
-  	<img src="img\ceiling06.png" style="max-width: 100%;height: auto; margin-top: -160px">
-    <div class="container">
+  <section id="projects" class="parallax-window " data-parallax="scroll"  data-image-src="https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/background/bg06.jpg">
+  	<img src="img\ceiling06.png" style="max-width: 100%;height: auto;">
+    <!--<div class="container">
 
-      <!-- Featured Project Row -->
+       Featured Project Row
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-xl-8 col-lg-7">
           <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
@@ -137,7 +206,7 @@
         </div>
       </div>
 
-      <!-- Project One Row -->
+       Project One Row
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
           <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
@@ -155,7 +224,7 @@
         </div>
       </div>
 
-      <!-- Project Two Row -->
+      Project Two Row
       <div class="row justify-content-center no-gutters">
         <div class="col-lg-6">
           <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
@@ -172,14 +241,14 @@
           </div>
         </div>
       </div>
-    </div>
-    <img src="img\floor06.png" style="max-width: 100%;height: auto; margin-bottom: -200px">
+    </div>-->
+    <img src="img\floor06.png" style="max-width: 100%;position: relative; top: 2105px; ">
   </section>
 
   <!-- Signup Section -->
   <footer id="signup">
   <section>
-  	<img src="img\ceiling09.png" style="max-width: 100%;height: auto; margin-top: -120px">
+  	<img src="img\ceiling09.png" style="max-width: 100%;height: auto;">
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto text-center">
@@ -188,6 +257,20 @@
     </div>
   </section>
   <!-- Footer -->
+  <section id="social-networks-follow">
+    <div class="container">
+        <div class="col">
+            <div class="content text-center">
+                <h1>Follow Ori!</h1>
+                <a href="https://twitter.com/OriTheGame"><img src="icon\twitter_icon.png" height="100px" width="100px"></a>
+                <a href="https://twitter.com/OriTheGame"><img src="icon\instagram_icon.png" height="100px" width="100px"></a>
+                <a href="https://www.facebook.com/OriTheGame/"><img src="icon\facebook_icon.png" height="100px" width="100px"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
   <div class="container">
         <div class="footer-logos">
