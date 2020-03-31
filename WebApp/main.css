@@ -1,16 +1,16 @@
-/* calibrate parallax sections height */
+/* calibrate parallax sections height(in mobile) */
   .parallax-window {
-      height: 1500px;
+      height: auto;
       background: transparent;
   }
 
   .parallax-window-Gameplay{
-    height: 1800px;
+    height: auto;
     background: transparent;
   }
 
   .parallax-window-The-World{
-    height: 1500px;
+    height: auto;
     background: transparent;
   }
 
@@ -19,6 +19,10 @@
     padding: 0;
     box-sizing: border-box;
     scrollbar-color: grey #111111;
+  }
+
+  html{
+    font-size: 10px;
   }
 
   .section{
@@ -53,14 +57,7 @@
     left: 0;
   }
 
-  .floor-header{
-    /* height: 100vh;
-    width: 100vh; */
-    position: relative;
-    overflow: hidden;
-    top: -150px;
-    left: 0;
-  }
+
 /* end video sections */
 
   .Quotes-field{
@@ -81,19 +78,6 @@
   display: flex;
   flex-direction: column;
   height: inherit;
-  justify-content: space-between;
-  }
-
-  .Text-Content {
-    flex-grow: 2;
-  }
-
-  .Text-Content_2 {
-    flex-grow: 2;
-  }
-
-  .Text-Content_3 {
-    flex-grow: 2;
   }
 /* styles for parallax container end */
 
@@ -120,7 +104,7 @@
   }
 
   .sub-headline{
-    font-size: 8.5rem;
+    font-size: 5.5rem;
     color: #c59d5f;
     font-family: 'Niconne';
     font-weight: 100;
@@ -133,16 +117,17 @@
     font-size: 10.3rem;
   }
   /* chỉnh cái này đi */
-  .headline{
+  /* .headline{
     color: white;
     font-size: 3.7rem;
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: .5rem;
-    }
+    } */
   /* ------------------ */
-
   /* Story Section ends */
+
+
   .image-group{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -155,24 +140,47 @@
   }
   /* gameplay section ends */
 
-/* experiment */
-  .BackStory-sections{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+
+
+  /* toggle from mobile to desktop version */
+    @media screen and (min-width: 900px) {
+
+      .section {
+        padding: 7.9rem;
+      }
+
+      .sub-headline {
+        font-size: 10rem;
+      }
+
+      .First-letter {
+        font-size: 12rem;
+      }
+
+      /* .headline {
+        font-size: 4.7rem;
+        letter-spacing: .8rem;
+      } */
+
+      .BackStory-sections{
+       display: flex;
+       align-items: center;
+     }
+
+     .BackStory-sections > div{
+       flex: 1;
+     }
+
+     .padding-right {
+       padding-right: 7rem;
+     }
   }
 
-  .BackStory-sections > div{
-    flex: 1;
+  @media screen and (max-width: 400px) {
+    .section{
+      padding:0rem;
+    }
   }
-
-  .padding-right {
-    padding-right: 7rem;
-  }
-
-
-
-
 
 
 
@@ -198,12 +206,11 @@
     width: 10%;
     height: 10%;
   }
-  backgroundAbout{
-    background-image: url(https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/background/bg03.jpg);
-    max-width: 100%;
-    height: auto;
-    background-position: center;
-    background-size:cover;
+
+  .pic-intro img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 
   #signup{
