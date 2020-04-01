@@ -1,9 +1,17 @@
-window.addEventListener("scroll", function() {showFunction()});
+//scrollreveal
 
-function showFunction() {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        document.getElementById("toptexts2").style.display = "block";
-    } else {
-        document.getElementById("toptexts2").style.display = "none";
-    }
-}
+// window.sr = ScrollReveal();
+//
+// ScrollReveal().reveal('.animate-left' , {
+//   origin: 'left',
+//   duration: 1000,
+//   distance: '25rem',
+//   delay: 300
+// });
+//
+// ScrollReveal().reveal('.animate-right' , {
+//   origin: 'right',
+//   duration: 1000,
+//   distance: '25rem',
+//   delay: 600
+// });

@@ -24,10 +24,17 @@
   <link href="main.css" rel="stylesheet">
 
   <!-- scroll reveal installation -->
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/scrollreveal@4"></script>
 
   <!-- fantasy font  -->
   <link href="https://fonts.googleapis.com/css?family=Niconne&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/ccbffdc2ae.js" crossorigin="anonymous"></script>
+
+  <script>
+		ScrollReveal({ duration: 1000 })
+	</script>
 
 </head>
 <!-- head end -->
@@ -83,20 +90,23 @@
   <section class="parallax-window " data-parallax="scroll"  data-image-src="https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/background/bg03.jpg">
       <div class="flex-container">
         <img src="img\ceiling03.png" class="img-fluid" alt="">
-          <div class="Text-Content section"> <!-- act as Section -->
-            <div class="containerr">
-                <div class="BackStory-sections">
-                  <div class="Text-BackStory padding-right animate-left">
+          <div class="Story-area section"> <!-- act as Section -->
+            <div class="container-Custom">
+                <div class="Display-styles">
+                  <div class="Text-infomation padding-right animate-left">
                     <div class="global-headline">
                       <h2 class="sub-headline">
                         <span class="First-letter">B</span>ackStory
                       </h2>
-                      <h1 class="headline">Ori and the blind Forest</h1>
+                      <h1 class="headline"><br></h1>
+                      <div class="styles-for-header">
+                        <span class="fadingline"></span>
+                      </div>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                   </div>
                   <div class="Story-image animate-right">
-                    <img src="img\our-story-1.jpg" alt="">
+                    <img src="img\728990.jpg" alt="">
                   </div>
                 </div>
             </div>
@@ -111,21 +121,24 @@
   <section class="parallax-window-Gameplay " data-parallax="scroll"  data-image-src="https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/background/bg04.jpg">
     <div class="flex-container">
       <img src="img\ceiling02.png" class="img-fluid" alt="">
-        <div class="Text-Content_2 section">
-          <div class="containerr">
-            <div class="BackStory-sections"><!-- same as restaurant info  -->
+        <div class="Gameplay-area section">
+          <div class="container-Custom">
+            <div class="Display-styles"><!-- same as restaurant info  -->
               <div class="image-group padding-right animate-left">
                 <img src="img\menu-group-1.jpg" alt="">
                 <img src="img\menu-group-2.jpg" alt="">
                 <img src="img\menu-group-3.jpg" alt="">
                 <img src="img\menu-group-4.jpg" alt="">
               </div>
-              <div class="Text-gameplay animate-right ">
+              <div class="Text-infomation animate-right ">
                 <div class="global-headline">
                   <h2 class="sub-headline">
                     <span class="First-letter">G</span>ameplay
                   </h2>
-                  <!-- <h1 class="headline">Lorem ipsum</h1> -->
+                  <h1 class="headline"><br></h1>
+                  <div class="styles-for-header">
+                    <span class="fadingline"></span>
+                  </div>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
@@ -140,15 +153,18 @@
   <section class="parallax-window-The-World " data-parallax="scroll"  data-image-src="https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/background/bg06.jpg">
   	<div class="flex-container">
       <img src="img\ceiling06.png" class="img-fluid" alt="">
-          <div class="Text-Content_3 section">
-            <div class="containerr">
-                <div class="BackStory-sections">
-                  <div class="Text-BackStory padding-right animate-left">
+          <div class="The-World section">
+            <div class="container-Custom">
+                <div class="Display-styles">
+                  <div class="Text-infomation padding-right animate-left">
                     <div class="global-headline">
                       <h2 class="sub-headline">
                         <span class="First-letter">T</span>heWorld
                       </h2>
-                      <!-- <h1 class="headline">lorem ipsum</h1> -->
+                      <h1 class="headline"><br></h1>
+                      <div class="styles-for-header">
+                        <span class="fadingline"></span>
+                      </div>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                   </div>
@@ -247,6 +263,12 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/grayscale.min.js"></script>
+
+  <script>
+		ScrollReveal().reveal('animate-left'  , { delay: 500 })
+		ScrollReveal().reveal('.animate-right', { delay: 500 })
+
+	</script>
 
 </body>
 </html>
