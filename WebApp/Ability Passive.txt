@@ -1,0 +1,10 @@
+Wall Jump – allows Ori to jump to climb up walls
+Double Jump – allows Ori to jump twice in the air
+Bash – allows Ori to push itself away from various objects and enemies, knocking them in the opposite direction
+Grapple – allows Ori to pull itself in a straight line to various objects and enemies
+Glide – allows Ori to slowly drift to the ground
+Dash – allows Ori to charge quickly left or right, even in the air.
+Swim Dash – allows Ori to Dash underwater, or near the surface of the water to launch into the air.
+Burrow – allows Ori to burrow through sand and snow
+Ancestral Light – grants Ori a 25% damage boost (x2)
+Water Breath – allows Ori to breathe underwater

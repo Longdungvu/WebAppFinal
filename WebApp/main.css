@@ -200,11 +200,40 @@
       }
     }
 
-    @media screen and (resolution: 90dpi) {
-      html{
-        font-size: 16px;
+  /* styles for toggle texts */
+      #Clicktable-origin{
+
       }
-    }
+
+      #Clicktable-first{
+        display: none;
+
+      }
+
+      #Clicktable-second{
+        display: none;
+
+      }
+
+      #Clicktable-third{
+        display: none;
+
+      }
+
+      #Clicktable-forth{
+        display: none;
+
+      }
+
+      #Clicktable-fifth{
+        display: none;
+
+      }
+
+      #Clicktable-sixth{
+        display: none;
+
+      }
 
 
 
@@ -226,8 +255,8 @@
 
 /* ----------------------------------------------------------------------------- */
   #pic1{
-    width: 10%;
-    height: 10%;
+    width: 20%;
+    height: 20%;
   }
 
   .pic-intro img {
@@ -237,9 +266,11 @@
   }
 
   #signup{
-    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/643249463521457690/17FF196159301FEEC23679B71232EB9A105857FC/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true);
-    max-width: 100%;
-      height: auto;
-      background-position: center;
-      background-size:cover;
+    background-color: black;
+  }
+  @media screen and (min-width: 1600px) {
+
+    html{
+          font-size: 20px;
+        }
   }

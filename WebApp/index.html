@@ -34,31 +34,35 @@
 </head>
 <!-- head end -->
 <!------------------------------------------------------------------------------->
+
 <body id="page-top">
 
   <!-- Navigation -->
-  <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img\logo-ori-wotw.png" id = "pic1"/></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="color: white; font-size: 15px">
         Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#story" style="font-size: 15px; color: white">Story</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Forest</a>
+            <a class="nav-link js-scroll-trigger" href="#gameplay" style="font-size: 15px; color: white">GamePlay</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#signup">Subcribe</a>
+            <a class="nav-link js-scroll-trigger" href="#theworld" style="font-size: 15px; color: white">TheWorld</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#signup" style="font-size: 15px; color: white">Subcribe</a>
           </li>
         </ul>
       </div>
     </div>
-  </nav> -->
+  </nav>
 
   <!-- intro video Section-->
   <section class="video_intro">
@@ -91,17 +95,17 @@
                   <div class="Text-infomation padding-right animate-left">
                     <div class="global-headline">
                       <h2 class="sub-headline">
-                        <span class="First-letter">B</span>ackStory
+                        <span class="First-letter" id="story">S</span>tory
                       </h2>
                       <h1 class="headline"><br></h1>
                       <div class="styles-for-header">
                         <span class="fadingline"></span>
                       </div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p><font color="white" style="font-size: 19px">The story begins where all stories should... at the beginning. The peace in the forest of Nibel, which at first glance seems to be kept well in the harmonious branches of the Spirit Tree, is suddenly shattered by a breathtaking roar of thunder. A storm breaks out, covering the sun and pummeling the forest with heavy rain and lightning. Another incredible flash zooms in on the trembling Spirit Tree, particularly highlighting one specific shining leaf. A powerful gust of wind tears the stem of the beautiful leaf, and in fluid, dazzling motions the currents quickly pull it away.</font></p>
                   </div>
                   <div class="Story-image animate-right">
-                    <img src="img\728990.jpg" alt="">
+                    <img src="img\pass1.jpg" alt="">
                   </div>
                 </div>
             </div>
@@ -120,22 +124,30 @@
           <div class="container-Custom">
             <div class="Display-styles"><!-- same as restaurant info  -->
               <div class="image-group padding-right animate-left">
-                <img src="img\menu-group-1.jpg" alt="">
-                <img src="img\menu-group-2.jpg" alt="">
-                <img src="img\menu-group-3.jpg" alt="">
-                <img src="img\menu-group-4.jpg" alt="">
+                <img src="Boss/wolf.png" onclick="swaptext()" alt="">
+                <img src="Boss/spider.jpg" onclick="swaptextX2()" alt="">
+                <img src="Boss/bird.jpg" onclick="swaptextX3()" alt="">
+                <img src="Boss/worms.jpg" onclick="swaptextX4()" alt="">
+                <img src="Boss/Kwolok.png" onclick="swaptextX5()" alt="">
+                <img src="Boss/hornbug.png" onclick="swaptextX6()" alt="">
               </div>
               <div class="Text-infomation animate-right ">
                 <div class="global-headline">
                   <h2 class="sub-headline">
-                    <span class="First-letter">G</span>ameplay
+                    <span class="First-letter" id="gameplay">B</span>ooses
                   </h2>
                   <h1 class="headline"><br></h1>
                   <div class="styles-for-header">
                     <span class="fadingline"></span>
                   </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p id="Clicktable-origin"><font color="white" style="font-size: 19px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</font></p>
+                <p id="Clicktable-first"><font color="white" style="font-size: 19px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </font></p>
+                <p id="Clicktable-second"><font color="white" style="font-size: 19px">text bừa 2 </font></p>
+                <p id="Clicktable-third"><font color="white" style="font-size: 19px">text bừa 3 </font></p>
+                <p id="Clicktable-forth"><font color="white" style="font-size: 19px">text bừa 4 </font></p>
+                <p id="Clicktable-fifth"><font color="white" style="font-size: 19px">text bừa 5 </font></p>
+                <p id="Clicktable-sixth"><font color="white" style="font-size: 19px">text bừa 6 </font></p>
               </div>
             </div>
           </div>
@@ -154,33 +166,25 @@
                   <div class="Text-infomation padding-right animate-left">
                     <div class="global-headline">
                       <h2 class="sub-headline">
-                        <span class="First-letter">T</span>heWorld
+                        <span class="First-letter" id="theworld">T</span>heWorld
                       </h2>
                       <h1 class="headline"><br></h1>
                       <div class="styles-for-header">
                         <span class="fadingline"></span>
                       </div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </div>
+                  <p><font color="white" style="font-size: 19px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</font></p>
+                </div>
                   <div class="image-group">
                     <img class="animate-top" src="img\delight-group-1.jpg" alt="">
                     <img class="animate-bottom" src="img\delight-group-2.jpg" alt="">
                   </div>
-                </div>
             </div>
           </div>
+        </div>
       <img src="img\floor06.png" class="img-fluid" alt="">
     </div>
   </section>
-
-
-
-
-
-
-
-
 
 
 
@@ -201,9 +205,9 @@
         <div class="col">
             <div class="content text-center">
                 <h1>Follow Ori!</h1>
-                <a href="https://twitter.com/OriTheGame"><img src="icon\twitter_icon.png" height="100px" width="100px"></a>
-                <a href="https://twitter.com/OriTheGame"><img src="icon\instagram_icon.png" height="100px" width="100px"></a>
-                <a href="https://www.facebook.com/OriTheGame/"><img src="icon\facebook_icon.png" height="100px" width="100px"></a>
+                <a href="https://twitter.com/OriTheGame"><img src="icon\twitter_icon.png"></a>
+                <a href="https://twitter.com/OriTheGame"><img src="icon\instagram_icon.png"></a>
+                <a href="https://www.facebook.com/OriTheGame/"><img src="icon\facebook_icon.png"></a>
             </div>
         </div>
     </div>

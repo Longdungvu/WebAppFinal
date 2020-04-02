@@ -1,0 +1,12 @@
+Spirit Edge – Attack at close range with a blade of light
+Spirit Arc – Fire an arrow of light (uses energy)
+Spike – Throw a powerful spear of light (uses energy)
+Spirit Smash – Pound foes with a strong, sweeping blow
+Spirit Star – Throw a star that returns to you (uses energy)
+Light Burst – Lob an explosive sphere of light (uses energy)
+Regenerate – Channel Energy to heal (uses energy)
+Flap – Blow objects away with a gust of wind
+Blaze – Set nearby enemies on fire (uses energy)
+Flash – Create an aura of light. Damages enemies (drains energy)
+Sentry – Spawn a spirit orb that attacks for you (uses energy)
+Launch – Turn yourself into a projectile
