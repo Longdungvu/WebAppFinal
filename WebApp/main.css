@@ -236,9 +236,17 @@
       }
 
 
+      /* hidden images */
+      .hidden {
+        display: none
+      }
 
+      /* hidden text */
+      .invisible {
+        visibility: hidden;
+      }
 
-
+      
 
 
 
@@ -268,6 +276,8 @@
   #signup{
     background-color: black;
   }
+
+  /* scale for big screen */
   @media screen and (min-width: 1600px) {
 
     html{

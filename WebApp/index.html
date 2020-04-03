@@ -29,6 +29,8 @@
   <!-- Font Awesome CDN -->
   <script src="https://kit.fontawesome.com/ccbffdc2ae.js" crossorigin="anonymous"></script>
 
+  <!-- fancybox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
 
 </head>
@@ -51,10 +53,10 @@
             <a class="nav-link js-scroll-trigger" href="#story" style="font-size: 15px; color: white">Story</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#gameplay" style="font-size: 15px; color: white">GamePlay</a>
+            <a class="nav-link js-scroll-trigger" href="#gameplay" style="font-size: 15px; color: white">Bosses</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#theworld" style="font-size: 15px; color: white">TheWorld</a>
+            <a class="nav-link js-scroll-trigger" href="#theworld" style="font-size: 15px; color: white">Character</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#signup" style="font-size: 15px; color: white">Subcribe</a>
@@ -105,7 +107,7 @@
                     <p><font color="white" style="font-size: 19px">The story begins where all stories should... at the beginning. The peace in the forest of Nibel, which at first glance seems to be kept well in the harmonious branches of the Spirit Tree, is suddenly shattered by a breathtaking roar of thunder. A storm breaks out, covering the sun and pummeling the forest with heavy rain and lightning. Another incredible flash zooms in on the trembling Spirit Tree, particularly highlighting one specific shining leaf. A powerful gust of wind tears the stem of the beautiful leaf, and in fluid, dazzling motions the currents quickly pull it away.</font></p>
                   </div>
                   <div class="Story-image animate-right">
-                    <img src="img\pass1.jpg" alt="">
+                    <img id="img-story" src="img\pass1.jpg" >
                   </div>
                 </div>
             </div>
@@ -137,17 +139,19 @@
                     <span class="First-letter" id="gameplay">B</span>ooses
                   </h2>
                   <h1 class="headline"><br></h1>
-                  <div class="styles-for-header">
+                  <div class="styles-for-header" >
                     <span class="fadingline"></span>
                   </div>
                 </div>
-                <p id="Clicktable-origin"><font color="white" style="font-size: 19px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</font></p>
-                <p id="Clicktable-first"><font color="white" style="font-size: 19px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </font></p>
-                <p id="Clicktable-second"><font color="white" style="font-size: 19px">text bừa 2 </font></p>
-                <p id="Clicktable-third"><font color="white" style="font-size: 19px">text bừa 3 </font></p>
-                <p id="Clicktable-forth"><font color="white" style="font-size: 19px">text bừa 4 </font></p>
-                <p id="Clicktable-fifth"><font color="white" style="font-size: 19px">text bừa 5 </font></p>
-                <p id="Clicktable-sixth"><font color="white" style="font-size: 19px">text bừa 6 </font></p>
+                <div class="background-for-word">
+                  <p id="Clicktable-origin"><font color="white" style="font-size: 19px;">a boss is a significant computer-controlled enemy.[1] A fight with a boss character is commonly referred to as a boss battle or boss fight. Boss battles are generally seen at a climax of a particular section of the game, usually at the end of a level or stage, or guarding a specific objective; the boss enemy is generally far stronger than the opponents the player has faced up to that point and is usually faced solo.<i class="invisible"> dots dots dots dots dots </i></font></p>
+                </div>
+                <p id="Clicktable-first"><font color="white" style="font-size: 19px"><strong style="color: blue">Howl </strong>is the first boss in Ori and the Will of the Wisps and forms part of the tutorial section of the game. Here both combat and platforming skills will be put to the test. Howl can be spotted in the background as you approach the Spirit Gate after finishing the quest with Tokk. A little further on and Howl pounces through the screen, roaring.On the left or right side of the arena she fires a shotgun spread of corruption projectiles from her mouth.</font></p>
+                <p id="Clicktable-second"><font color="white" style="font-size: 19px">Once you’ve worked your way through Mouldwood Depths, your reward is a fight against a massive spider,<strong style="color: green"> Mora</strong>. She’ll initially plunge you downwards, and you’ll fall into the arena properly. The handy-looking ledge here won’t be around for long, so don’t bother with it. You should notice that either side of the arena, the walls are bare, meaning they can be climbed. This will be especially useful for dodging and gaining height during the fight. </font></p>
+                <p id="Clicktable-third"><font color="white" style="font-size: 19px"><strong style="color: silver">Shriek </strong>is large and very strong. She can fly and uses this to her advantage in chase sequences , she can attack you if you go under her with her 2 smaller claws , stomping with her bone spear limbs. She can send flames across the ground, fire out corruption projectiles. She also has a laser attack that goes from left or right side of the screen to the middle. Shriek uses her flying to destroy structures. Also to kill the spirit and the eviroment.</font></p>
+                <p id="Clicktable-forth"><font color="white" style="font-size: 19px">During your quest through Willow’s End, to open up access to the Spirit Willow, you will encounter the<strong style="color: red"> Willow Stone </strong>mini-boss. At this stage in the game, it shouldn’t pose too much of a threat to you, especially when you understand its attack patterns and how to combat them. You can only damage Willow Stone by striking its core, which is protected by two layers of rock for most of the fight.It will run and eat the spirit. </font></p>
+                <p id="Clicktable-fifth"><font color="white" style="font-size: 19px"><strong style="color: purple">Kwolok </strong>corrupted by Stink Spirit. This is a fight in two stages, with no checkpoints. It requires a lot of patience, tests a few of your different skills and demands that you watch the enemy closely before planning your attacks. You’ll be fighting the first phase on dry land, and then the second from within the water, so be prepared. Also early on, Kwolok will smash the ground and create a pit of thorns in the middle of the floor. </font></p>
+                <p id="Clicktable-sixth"><font color="white" style="font-size: 19px"><strong style="color: green">The Horn Beetle </strong>will be very aggressive, almost relentlessly so, which can easily catch you off guard. The openings are there, but will likely be over too quickly to react the first time. The player, however, can use dash to their advantage. Hitting him from the front won’t do any damage. The final watch out is that either side of the arena is packed full of thorns which will damage constantly. With the aggressive movement of the Horn Beetle </font></p>
               </div>
             </div>
           </div>
@@ -166,18 +170,39 @@
                   <div class="Text-infomation padding-right animate-left">
                     <div class="global-headline">
                       <h2 class="sub-headline">
-                        <span class="First-letter" id="theworld">T</span>heWorld
+                        <span class="First-letter" id="theworld">C</span>haracter
                       </h2>
                       <h1 class="headline"><br></h1>
                       <div class="styles-for-header">
                         <span class="fadingline"></span>
                       </div>
                     </div>
-                  <p><font color="white" style="font-size: 19px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</font></p>
+                  <p id="text1"><font color="white" style="font-size: 19px"><strong>Ori </strong>is a small white creature with a similar stance to a human or a bunny and has a cat-like tail and large black eyes with white pupils. They have two short horn-like tufts on top of their head, and underneath them there are larger ears, which droop when Ori is unhappy or weak. Ori's feet have small white hooves, as seen in their 3D model sheet.Their name is of Hebrew.</font></p>
+                  <p id="text2"><font color="white" style="font-size: 19px"><strong>Kuro's Egg</strong>, also known as Ku, is the unborn child of Kuro, and her only remaining offspring.Kuro's Egg has the familiar appearance of a normal bird's egg, being ovular in shape but uncommonly huge in size. In fact, it is bigger than most of the characters in the game, save Kuro herself. The cream-colored shell of Kuro's Egg is speckled with dots.<i class="invisible">dots dots dots dots dots </i></font></p>
                 </div>
                   <div class="image-group">
-                    <img class="animate-top" src="img\delight-group-1.jpg" alt="">
-                    <img class="animate-bottom" src="img\delight-group-2.jpg" alt="">
+                    <img class="animate-top" id="img1" src="img\ori.jpg" onclick="swap_text_and_img()">
+                    <!-- lightbox -->
+                    <a href="lightbox/Grom.png" data-fancybox="gallery">
+                    <img class="animate-bottom" src="lightbox/ori-origin.png">
+                    </a>
+                    <a class="hidden" href="lightbox/Kwolok.png" data-fancybox="gallery" >
+                    </a>
+                    <a class="hidden" href="lightbox/Lupo.png" data-fancybox="gallery" >
+                    </a>
+                    <a class="hidden" href="lightbox/Motay.png" data-fancybox="gallery" >
+                    </a>
+                    <a class="hidden" href="lightbox/Opher.png" data-fancybox="gallery" >
+                    </a>
+                    <a class="hidden" href="lightbox/Tokk.png" data-fancybox="gallery" >
+                    </a>
+                    <a class="hidden" href="lightbox/Tuley.png" data-fancybox="gallery" >
+                    </a>
+                    <a class="hidden" href="lightbox/Kwolok.png" data-fancybox="gallery" >
+                    </a>
+                    <a class="hidden" href="lightbox/Kwolok.png" data-fancybox="gallery" >
+                    </a>
+                    <!-- lightbox end -->
                   </div>
             </div>
           </div>
@@ -265,7 +290,9 @@
 
   <!-- JavaScript using our own -->
   <script src="main.js"></script>
-
+  <!-- jQuery and fancybox JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 </body>
 </html>

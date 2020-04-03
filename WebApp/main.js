@@ -31,7 +31,6 @@ sr.reveal('.animate-bottom' , {
 });
 
 // Clicktable images
-function swaptext() {
   var x = document.getElementById("Clicktable-first");
   var y = document.getElementById("Clicktable-second");
   var k = document.getElementById("Clicktable-third");
@@ -39,6 +38,11 @@ function swaptext() {
   var n = document.getElementById("Clicktable-fifth");
   var b = document.getElementById("Clicktable-sixth");
   var z = document.getElementById("Clicktable-origin");
+  var text1 = document.getElementById("text1");
+  var text2 = document.getElementById("text2");
+
+function swaptext() {
+
   if (x.style.display == "block") {
     x.style.display = "none";
     z.style.display = "block";
@@ -53,13 +57,7 @@ function swaptext() {
   }
 }
 function swaptextX2() {
-  var x = document.getElementById("Clicktable-first");
-  var y = document.getElementById("Clicktable-second");
-  var k = document.getElementById("Clicktable-third");
-  var m = document.getElementById("Clicktable-forth");
-  var n = document.getElementById("Clicktable-fifth");
-  var b = document.getElementById("Clicktable-sixth");
-  var z = document.getElementById("Clicktable-origin");
+
   if (y.style.display == "block") {
     y.style.display = "none";
     z.style.display = "block";
@@ -74,13 +72,7 @@ function swaptextX2() {
   }
 }
 function swaptextX3() {
-  var x = document.getElementById("Clicktable-first");
-  var y = document.getElementById("Clicktable-second");
-  var k = document.getElementById("Clicktable-third");
-  var m = document.getElementById("Clicktable-forth");
-  var n = document.getElementById("Clicktable-fifth");
-  var b = document.getElementById("Clicktable-sixth");
-  var z = document.getElementById("Clicktable-origin");
+
   if (k.style.display == "block") {
     k.style.display = "none";
     z.style.display = "block";
@@ -95,13 +87,7 @@ function swaptextX3() {
   }
 }
 function swaptextX4() {
-  var x = document.getElementById("Clicktable-first");
-  var y = document.getElementById("Clicktable-second");
-  var k = document.getElementById("Clicktable-third");
-  var m = document.getElementById("Clicktable-forth");
-  var n = document.getElementById("Clicktable-fifth");
-  var b = document.getElementById("Clicktable-sixth");
-  var z = document.getElementById("Clicktable-origin");
+
   if (m.style.display == "block") {
     m.style.display = "none";
     z.style.display = "block";
@@ -116,13 +102,7 @@ function swaptextX4() {
   }
 }
 function swaptextX5() {
-  var x = document.getElementById("Clicktable-first");
-  var y = document.getElementById("Clicktable-second");
-  var k = document.getElementById("Clicktable-third");
-  var m = document.getElementById("Clicktable-forth");
-  var n = document.getElementById("Clicktable-fifth");
-  var b = document.getElementById("Clicktable-sixth");
-  var z = document.getElementById("Clicktable-origin");
+
   if (n.style.display == "block") {
     n.style.display = "none";
     z.style.display = "block";
@@ -137,13 +117,7 @@ function swaptextX5() {
   }
 }
 function swaptextX6() {
-  var x = document.getElementById("Clicktable-first");
-  var y = document.getElementById("Clicktable-second");
-  var k = document.getElementById("Clicktable-third");
-  var m = document.getElementById("Clicktable-forth");
-  var n = document.getElementById("Clicktable-fifth");
-  var b = document.getElementById("Clicktable-sixth");
-  var z = document.getElementById("Clicktable-origin");
+
   if (b.style.display == "block") {
     b.style.display = "none";
     z.style.display = "block";
@@ -157,3 +131,20 @@ function swaptextX6() {
     x.style.display = "none";
   }
 }
+
+
+text2.style.display = "none";
+
+function swap_text_and_img() {
+ 
+  if (text2.style.display == "block"){
+    text2.style.display = "none";
+    text1.style.display = "block";
+    document.getElementById("img1").src = "img/ori.jpg";
+  } else {
+    text2.style.display = "block";
+    text1.style.display = "none";
+    document.getElementById("img1").src = "img/ku.png";
+  }
+}
+
