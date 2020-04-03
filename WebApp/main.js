@@ -132,11 +132,10 @@ function swaptextX6() {
   }
 }
 
-
 text2.style.display = "none";
 
 function swap_text_and_img() {
- 
+
   if (text2.style.display == "block"){
     text2.style.display = "none";
     text1.style.display = "block";
@@ -147,4 +146,3 @@ function swap_text_and_img() {
     document.getElementById("img1").src = "img/ku.png";
   }
 }
-
